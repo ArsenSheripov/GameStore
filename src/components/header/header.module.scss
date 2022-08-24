@@ -1,0 +1,21 @@
+@import '../../styles/App.scss';
+
+.header {
+	background-color: aqua;
+	padding: 1rem 0rem;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__nav {
+		display: flex;
+		align-items: center;
+
+		a:not(:last-child) {
+			margin-right: 1rem;
+		}
+	}
+}
