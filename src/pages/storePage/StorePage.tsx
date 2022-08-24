@@ -1,9 +1,10 @@
 import React from 'react'
+import GameList from '../../components/games/GameList';
 
 const StorePage = () => {
 	return (
-		<div>
-			Storepage
+		<div className='container'>
+			<GameList />
 		</div>
 	)
 }
