@@ -2,4 +2,13 @@ Pages:
 
 [] - home
 [] - store
+[] - comunity
+[] - make a purchase
 
+Features:
+
+[] - authorization
+[] - favorites
+[] - cart
+[] - search
+[] - slider
