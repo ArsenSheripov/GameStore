@@ -2,7 +2,9 @@ import React, { FC } from 'react'
 import cl from './appButton.module.scss';
 
 interface AppButtonProps {
-	children: any
+	children?: any
+	props?: any
+	onClick?: any
 }
 
 const AppButton: FC<AppButtonProps> = ({ children, ...props }) => {

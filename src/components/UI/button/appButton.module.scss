@@ -1,8 +1,11 @@
-.AppBtn {
+@import '../../../styles/App.scss';
+
+.appBtn {
 	padding: 5px 15px;
-	color: teal;
+	color: $text-color;
 	font-size: 14px;
-	background-color: transparent;
-	border: 1px solid teal;
+	background-color: $dollar;
+	border: 1px solid $dollar;
 	cursor: pointer;
+	border-radius:1rem;
 }
