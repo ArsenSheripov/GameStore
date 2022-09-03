@@ -1,0 +1,37 @@
+@import "../../../styles/App";
+
+.cartMenu {
+    position: absolute;
+    top: 2rem;
+    left: -20rem;
+    width: 25rem;
+    padding: 1rem;
+    background-color: $color-2;
+    border-radius: 0.75rem;
+    z-index: 2;
+
+    &__gameList {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.75rem;
+        margin-bottom: 1rem;
+    }
+
+    &__game {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.2rem;
+    }
+
+    &__price {
+        font-weight: bold;
+        color: $dollar;
+    }
+
+    &__order {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.2rem;
+    }
+}
