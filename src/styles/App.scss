@@ -1,7 +1,7 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 $main-color: #0e0b47;
@@ -9,20 +9,21 @@ $text-color: #f5f5f5;
 $dollar: #85bb65;
 $color-1: #42db5e;
 $color-2: #474343;
+$color-3: #6b6b6b;
 
 body {
-	font-family: 'Pricedown', sans-serif;
-	font-size: 1rem;
-	color: $text-color;
-	background-color: $main-color;
+    font-family: "Pricedown", sans-serif;
+    font-size: 1rem;
+    color: $text-color;
+    background-color: $main-color;
 }
 
 img {
-	max-width: 100%;
+    max-width: 100%;
 }
 
 .container {
-	width: 90rem;
-	margin: 0 auto;
-	max-width: 100%;
+    width: 90rem;
+    margin: 0 auto;
+    max-width: 100%;
 }

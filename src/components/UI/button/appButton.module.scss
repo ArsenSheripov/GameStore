@@ -1,11 +1,21 @@
-@import '../../../styles/App.scss';
+@import "../../../styles/App.scss";
 
 .appBtn {
-	padding: 5px 15px;
-	color: $text-color;
-	font-size: 14px;
-	background-color: $dollar;
-	border: 1px solid $dollar;
-	cursor: pointer;
-	border-radius:1rem;
+    padding: 5px 15px;
+    color: $text-color;
+    font-size: 14px;
+    background-color: $dollar;
+    border: 1px solid $dollar;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.appBtnPrimary {
+    padding: 5px 15px;
+    color: $text-color;
+    font-size: 14px;
+    background-color: #6b6b6b;
+    border: 1px solid $color-2;
+    cursor: pointer;
+    border-radius: 1rem;
 }

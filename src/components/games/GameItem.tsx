@@ -1,41 +1,33 @@
 import React, { FC } from "react";
+import { useNavigate } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../../hooks/reduxHooks";
 import { deleteItemFromCart, setItemInCart } from "../../store/cart/reducer";
+import { setCurrentGame } from "../../store/games/reducer";
 import { IGame } from "../../types/IGame";
 import AppButton from "../UI/button/AppButton";
 import cl from "./game.module.scss";
+import GameBuy from "./GameBuy";
 
 interface GameItemProps {
-    game: IGame;
+	game: IGame;
 }
 
 const GameItem: FC<GameItemProps> = ({ game }) => {
-    const dispatch = useAppDispatch();
-    const items = useAppSelector((state) => state.cart.itemsInCart);
-    const isItemInCart = items.some((item) => item.id === game.id);
+	const dispatch = useAppDispatch();
+	const navigate = useNavigate();
 
-    const handleClick = (e: any) => {
-        e.stopPropagation();
-        if (isItemInCart) {
-            dispatch(deleteItemFromCart(game.id));
-        } else {
-            dispatch(setItemInCart(game));
-        }
-    };
-
-    return (
-        <div className={cl.games__item}>
-            <img className={cl.games__img} src={game.image} alt="" />
-            <h1 className={cl.games__name}>{game.title}</h1>
-            <p className={cl.games__description}>{game.description}</p>
-            <div className={cl.games__order}>
-                <b className={cl.games__price}>{game.price} $</b>
-                <AppButton onClick={handleClick}>
-                    {isItemInCart ? "Удвлить" : "В корзину"}
-                </AppButton>
-            </div>
-        </div>
-    );
+	const handleGameNavigate = () => {
+		dispatch(setCurrentGame(game));
+		navigate(`/games/${game.id}`);
+	};
+	return (
+		<div className={cl.games__item} onClick={handleGameNavigate}>
+			<img className={cl.games__img} src={game.image} alt="" />
+			<h1 className={cl.games__name}>{game.title}</h1>
+			<p className={cl.games__description}>{game.description}</p>
+			<GameBuy game={game} />
+		</div>
+	);
 };
 
 export default GameItem;

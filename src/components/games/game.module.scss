@@ -1,4 +1,4 @@
-@import '../../styles/App';
+@import "../../styles/App";
 
 .games {
 	display: flex;
@@ -31,7 +31,6 @@
 		border-radius: 5px 5px 0 0;
 	}
 
-	
 	&__name {
 		font-size: 2rem;
 		margin-bottom: 0.5rem;
@@ -39,8 +38,8 @@
 		-o-text-overflow: ellipsis;
 		text-overflow: ellipsis;
 		overflow: hidden;
-		-ms-line-clamp:1;
-		-webkit-line-clamp:1;
+		-ms-line-clamp: 1;
+		-webkit-line-clamp: 1;
 		line-clamp: 1;
 		display: -webkit-box;
 		display: box;
@@ -48,7 +47,6 @@
 		-webkit-box-orient: vertical;
 		box-orient: vertical;
 	}
-
 
 	&__description {
 		font-size: 1.25rem;
@@ -84,4 +82,22 @@
 		margin-right: 0.75rem;
 	}
 
+	&__Genre {
+		background-color: rgb(80, 82, 84);
+		padding: 2px 5px;
+		font-size: 13px;
+		border-radius: 10px;
+		&:not(:last-child) {
+			margin-right: 7px;
+		}
+	}
+}
+.genre {
+	background-color: rgb(80, 82, 84);
+	padding: 2px 5px;
+	font-size: 13px;
+	border-radius: 10px;
+	&:not(:last-child) {
+		margin-right: 7px;
+	}
 }
