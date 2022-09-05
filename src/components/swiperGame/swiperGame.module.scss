@@ -1,0 +1,19 @@
+@import "../../styles/App";
+
+.swiperGame {
+	height: 30rem;
+
+	img {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+
+	&__title {
+		position: absolute;
+		top: 0rem;
+		right: 0;
+		z-index: 3000;
+	}
+}
