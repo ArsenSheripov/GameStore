@@ -20,13 +20,13 @@ const OrderItem: FC<OrderItemProps> = ({ game }) => {
 	return (
 		<div className={cl.orderItem}>
 			<div className={cl.orderItem__img}>
-				<GameCover image={game.image} />
+				<GameCover image={game.thumbnail} />
 			</div>
 			<div className={cl.orderItem__title}>
 				<h2>{game.title}</h2>
 			</div>
 			<div className={cl.orderItem__price}>
-				<p>{game.price} $</p>
+				<p>10 $</p>
 				<button onClick={handleClick}>
 					<img src={circleIcon} alt="X" width={33} />
 				</button>

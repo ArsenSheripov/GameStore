@@ -1,9 +1,9 @@
 export interface IGame {
-	image: string
-    title: string
-    genres: string[]
-    price: number
-    video: string
-    id: number
-    description: string
+	thumbnail: string;
+	title: string;
+	genres: string[];
+	price: number;
+	video: string;
+	id: number;
+	short_description: string;
 }

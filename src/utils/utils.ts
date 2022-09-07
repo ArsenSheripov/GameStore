@@ -3,6 +3,7 @@ import { IGame } from "../types/IGame";
 export const calcTotalPrice = (items: any) =>
 	items.reduce((acc: any, item: any) => (acc += item.price), 0);
 
+// Меняет склонения взависмости от количества товаров
 export const enumerate = (num: number, dec: any) => {
 	if (num > 100) num = num % 100;
 	if (num <= 20 && num >= 10) return dec[2];

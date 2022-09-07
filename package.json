@@ -13,6 +13,7 @@
     "@types/react-dom": "^18.0.6",
     "@types/react-router-dom": "^5.3.3",
     "@types/redux": "^3.6.0",
+    "axios": "^0.27.2",
     "install": "^0.13.0",
     "node-sass": "^7.0.1",
     "npm": "^8.18.0",

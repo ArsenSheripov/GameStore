@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { IGame } from "../../../types/IGame";
-import { calcTotalPrice } from "../../utils";
+import { calcTotalPrice } from "../../../utils/utils";
 import AppButton from "../../UI/button/AppButton";
 import CartGame from "./CartGame";
 import cl from "./cartMenu.module.scss";

@@ -1,7 +1,7 @@
 import React from "react";
 import OrderItem from "../../components/orderItem/OrderItem";
 import { useAppSelector } from "../../hooks/reduxHooks";
-import { calcTotalPrice, enumerate } from "../../components/utils";
+import { calcTotalPrice, enumerate } from "../../utils/utils";
 import cl from "./orderPage.module.scss";
 import AppButton from "../../components/UI/button/AppButton";
 

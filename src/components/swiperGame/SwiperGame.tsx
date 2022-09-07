@@ -10,7 +10,7 @@ interface SwiperGameProps {
 const SwiperGame: FC<SwiperGameProps> = ({ game }) => {
 	return (
 		<div className={cl.swiperGame}>
-			<img src={game.image} alt="game" />
+			<img src={game.thumbnail} alt="game" />
 			<h3 className={cl.siperGame__title}>{game.title}</h3>
 		</div>
 	);

@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import cartIcon from "../../assets/images/shopping-cart-outline-svgrepo-com.svg";
 import { useAppSelector } from "../../hooks/reduxHooks";
 import { ORDER_ROUTE } from "../../router/consts";
-import { calcTotalPrice } from "../utils";
+import { calcTotalPrice } from "../../utils/utils";
 import CartMenu from "./cartMenu/CartMenu";
 import cl from "./header.module.scss";
 

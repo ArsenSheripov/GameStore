@@ -23,7 +23,7 @@ const GameBuy: FC<GameBuyProps> = ({ game }) => {
 	};
 	return (
 		<div className={cl.games__order}>
-			<b className={cl.games__price}>{game.price} $</b>
+			<b className={cl.games__price}>10$</b>
 			<AppButton
 				onClick={handleCart}
 				type={isItemInCart ? "primary" : ""}
