@@ -16,15 +16,15 @@ export default class GameService {
 		return response;
 	}
 
-	static async getById(id: string) {
-		const response = await axios.get("/games/" + id, {
+	static async getById(id: any) {
+		const response = await axios.get("/game/" + id, {
 			baseURL: `https://${API_HOST}/api`,
 			headers: {
 				"X-RapidAPI-Key": API_KEY,
 				"X-RapidAPI-Host": API_HOST,
 			},
 			params: {
-				platform: "browser",
+				id: `${id}`,
 			},
 		});
 		return response;
